@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para Gih 💖</title>
+  <title>Para Gih ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #000000, #ff3366);
+      background: linear-gradient(to bottom, #000000, #8B0000);
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       min-height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
     .container {
       padding: 2rem;
+      z-index: 1;
     }
     h1 {
       font-family: 'Pacifico', cursive;
       font-size: 2.5rem;
-      color: #ff99cc;
+      color: #ff4d4d;
       margin-bottom: 1rem;
     }
     p {
@@ -32,18 +35,19 @@
       max-width: 500px;
       margin: 1rem auto;
     }
-    .hearts {
-      font-size: 2rem;
-      margin: 1rem 0;
-      animation: float 2s ease-in-out infinite;
+    .heart {
+      position: absolute;
+      color: #ff4d4d;
+      animation: float 5s linear infinite;
+      opacity: 0.7;
     }
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+      0% { transform: translateY(100vh) scale(0.5); }
+      100% { transform: translateY(-10vh) scale(1); }
     }
     .youtube-button {
       margin-top: 1.5rem;
-      background-color: #ff3366;
+      background-color: #ff4d4d;
       color: white;
       padding: 0.75rem 1.5rem;
       border: none;
@@ -55,16 +59,32 @@
       transition: background-color 0.3s;
     }
     .youtube-button:hover {
-      background-color: #e82e5c;
+      background-color: #e63946;
     }
   </style>
 </head>
 <body>
+  <!-- Floating hearts -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = Math.random() * 24 + 12 + 'px';
+      heart.style.top = Math.random() * 100 + 'vh';
+      heart.innerText = '❤️';
+      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      document.body.appendChild(heart);
+    }
+  </script>
+
   <div class="container">
-    <h1>Para Gih 💖</h1>
-    <div class="hearts">💗💞💘</div>
-    <p>Gih, cada momento contigo é uma nova forma de descobrir o amor. Seu sorriso é meu lugar favorito, e seu abraço é meu lar. Esse site é só uma pequena forma de mostrar o quanto você é especial pra mim. <br><br>Te amo — Krauss 💖</p>
+    <h1>Para Gih ❤️</h1>
+    <p>Gih, cada momento contigo é uma nova forma de descobrir o amor. Seu sorriso é meu lugar favorito, e seu abraço é meu lar. Esse site é só uma pequena forma de mostrar o quanto você é especial pra mim. <br><br>Te amo — Krauss ❤️</p>
 
     <p>Você ilumina meus dias como o pôr do sol mais bonito, e quando estou com você, tudo se torna 'golden'. Essa música me faz lembrar de você – perfeita, única, e brilhando do jeitinho que só você sabe ser. Te amo, Gih 💫</p>
 
     <a class="youtube-button" href="https://www.youtube.com/watch?v=PEM0Vs8jf1w" target="_blank">🎵 Ouça nossa música: Golden Hour</a>
+  </div>
+</body>
+</html>

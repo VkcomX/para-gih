@@ -4,46 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para Minha Nega ❤️</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle, #ffcccc 0%, #ff4d4d 100%);
-      color: #fff5f5;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #2b0000 0%, #ff4d4d 100%);
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       min-height: 100vh;
-      position: relative;
-      overflow-x: hidden; /* ← Agora permite rolagem para baixo */
+      overflow-x: hidden;
     }
     .container {
       padding: 2rem;
+      max-width: 900px;
       z-index: 1;
     }
     h1 {
       font-family: 'Pacifico', cursive;
-      font-size: 2.8rem;
-      color: #ffffff;
+      font-size: 3rem;
+      color: #ffcccc;
       margin-bottom: 1rem;
-      text-shadow: 2px 2px #e60000;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     }
     p {
       font-size: 1.2rem;
-      max-width: 500px;
-      margin: 1rem auto;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 10px;
+      line-height: 1.8;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.2rem;
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
     }
     .heart {
       position: absolute;
       color: #ff3366;
-      animation: float 5s linear infinite;
+      animation: float 8s linear infinite;
       opacity: 0.6;
+      z-index: 0;
     }
     @keyframes float {
       0% { transform: translateY(100vh) scale(0.5); }
@@ -53,81 +55,70 @@
       margin-top: 1.5rem;
       background-color: #ff3366;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 0.9rem 1.7rem;
       border: none;
       border-radius: 30px;
       font-size: 1rem;
+      font-weight: bold;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
-      transition: background-color 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
     }
     .youtube-button:hover {
       background-color: #e6004c;
+      transform: scale(1.05);
     }
     .gallery {
       margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.2rem;
     }
     .gallery img {
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     }
   </style>
 </head>
 <body>
-  <!-- Floating hearts -->
   <script>
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 25; i++) {
       const heart = document.createElement('div');
       heart.className = 'heart';
       heart.style.left = Math.random() * 100 + 'vw';
       heart.style.fontSize = Math.random() * 24 + 12 + 'px';
       heart.style.top = Math.random() * 100 + 'vh';
       heart.innerText = '❤️';
-      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
       document.body.appendChild(heart);
     }
   </script>
 
   <div class="container">
     <h1>Eu te Amo ❤️</h1>
-    <p>Amor, cada momento contigo é uma nova forma de descobrir o amor. Seu sorriso é meu lugar favorito, e seu abraço é meu lar. Esse site é só uma pequena forma de mostrar o quanto você é especial pra mim.</p>
-
-    <p>Você ilumina meus dias como o pôr do sol mais bonito, e quando estou com você, tudo se torna 'golden'. Essa música me faz lembrar de você – perfeita, única, e brilhando do jeitinho que só você sabe ser. Te amo, Gih 💫</p>
-    <p>
-  Neste Dia dos Namorados, eu só quero te lembrar o quanto você é importante pra mim. <br><br>
-  Cada detalhe seu me encanta, cada sorriso seu me aquece, cada momento contigo é um presente. <br><br>
-  Você não é só minha namorada, você é meu porto seguro, minha melhor amiga, meu amor de todas as vidas. <br><br>
-  Obrigado por existir, por me amar, por me fazer sentir tão especial todos os dias. <br><br>
-  Te prometo carinho, lealdade, cuidado, amor e tudo de mais bonito que eu puder te oferecer. <br><br>
-  Feliz Dia dos Namorados, minha vida. Te amo mais do que palavras podem explicar. ❤️<br><br>
-    </p>
-    
-    <p>
-    Bom dia, minha princesa 💖
-Acordar e saber que você existe é, sem dúvida,a melhor coisa que a vida me dá todos os dias.<br><br>
-Espero que seu dia seja incrível, cheio de coisasboas, e que cada momento te lembre o quanto vocêé especial pra mim.<br><br>
-Você é meu pensamento mais bonito, minha paz o motivo do meu sorriso bobo...<br><br>
-E mais que isso: você não é só minha namorada, é minha deusa, minha melhor amiga, e minha futura esposa.<br><br>
-Você é tudo pra mim, amor.<br><br>
-Te amo mais do que qualquer palavra consegue explicar. Tenha um dia lindo, assim como você 🌅❤️<br><br>
-    </p>
-
+    <p>Amor, cada momento contigo é uma nova forma de descobrir o amor. Seu sorriso é meu lugar favorito, e seu abraço é meu lar.</p>
+    <p>Você ilumina meus dias como o pôr do sol mais bonito, e quando estou com você, tudo se torna “golden”.</p>
+    <p>Feliz Dia dos Namorados, minha vida. Te amo mais do que palavras podem explicar. ❤️</p>
+    <p>Bom dia, minha princesa 💖 Acordar e saber que você existe é, sem dúvida, a melhor coisa que a vida me dá todos os dias.</p>
     <p><strong>Te amo — Krauss ❤️</strong></p>
 
-    <a class="youtube-button" href="https://www.youtube.com/watch?v=PEM0Vs8jf1w" target="_blank">🎵 Ouça nossa música: Golden Hour</a>
+    <a class="youtube-button" href="https://www.youtube.com/watch?v=PEM0Vs8jf1w" target="_blank">🎵 Nossa música: Golden Hour</a>
 
     <div class="gallery">
-      <img src="https://cdn.discordapp.com/attachments/1036997475145367604/1404266224879140874/IMG-20250719-WA0008.jpg?ex=689a9056&is=68993ed6&hm=19cfeddcca7f1412279f35ae037554f966a91c8343b55997759a9d0752b0cda7&">
-      <img src="https://media.discordapp.net/attachments/1036997475145367604/1382176811781197925/IMG_20250610_225659.png?ex=684a33f7&is=6848e277&hm=95d52df3da856e5c057df3b08c5c285db9fafaa71695dc783d3ac3a184548d38&=&format=webp&quality=lossless" alt="https://media.discordapp.net/attachments/1036997475145367604/1382176034522398770/IMG_20250610_225335.png?ex=684a333e&is=6848e1be&hm=9028bebd8090cf4e92944b3d4452f0c6bdd0d1f0b0f618c002f5b7030629935f&=&format=webp&quality=lossless">
-      <img src="https://media.discordapp.net/attachments/1036997475145367604/1382176034803159100/IMG_20250610_225352.png?ex=684a333e&is=6848e1be&hm=4d48862d082d8ba1f04c9af89fd7f915c84305ae45772b2efadd65fabd975a7e&=&format=webp&quality=lossless" alt="https://media.discordapp.net/attachments/1036997475145367604/1382176034803159100/IMG_20250610_225352.png?ex=684a333e&is=6848e1be&hm=4d48862d082d8ba1f04c9af89fd7f915c84305ae45772b2efadd65fabd975a7e&=&format=webp&quality=lossless">
+      <img src="https://cdn.discordapp.com/attachments/1036997475145367604/1404266224879140874/IMG-20250719-WA0008.jpg">
+      <img src="https://media.discordapp.net/attachments/1036997475145367604/1382176811781197925/IMG_20250610_225659.png?format=webp&quality=lossless">
+      <img src="https://media.discordapp.net/attachments/1036997475145367604/1382176034803159100/IMG_20250610_225352.png?format=webp&quality=lossless">
     </div>
   </div>
 </body>
